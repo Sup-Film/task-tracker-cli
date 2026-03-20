@@ -7,7 +7,8 @@
     "task-cli": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node ./node_modules/typescript/bin/tsc",
+    "test": "npm run build && node --test",
     "start": "node dist/index.js",
     "dev": "bun run src/index.ts"
   },
